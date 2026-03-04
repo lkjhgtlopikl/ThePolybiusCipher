@@ -1,8 +1,8 @@
 import random
-key = random.randbytes(128)
+key = random.randbytes(64)
 keys_for_round = []
-for i in range(0, len(key), 2):
-    keys_for_round.append(key[i:i + 2])
+for i in range(0, len(key), 4):
+    keys_for_round.append(key[i:i + 4])
 sBox = [random.sample(range(4), 4) for _ in range(16)]
 sBox = [{i: s[i] for i in range(len(s))} for s in sBox]
 text = input("Введите текст: ")
