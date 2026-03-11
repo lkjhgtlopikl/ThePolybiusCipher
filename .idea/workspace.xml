@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="762a87ad-f7f9-4ac4-82b3-5e2fa46dbe8d" name="Changes" comment="add GOST 28147-89" />
+    <list default="true" id="762a87ad-f7f9-4ac4-82b3-5e2fa46dbe8d" name="Changes" comment="add interface to GOST">
+      <change afterPath="$PROJECT_DIR$/RSA/RSA_CFB.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RSA/keyGenerate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GOST_28147-89.py" beforeDir="false" afterPath="$PROJECT_DIR$/GOST_28147-89.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SinglePermutation.py" beforeDir="false" afterPath="$PROJECT_DIR$/SinglePermutation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThePolybiusCipher.py" beforeDir="false" afterPath="$PROJECT_DIR$/ThePolybiusCipher.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +35,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/lkjhgtlopikl/ThePolybiusCipher.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/lkjhgtlopikl/ThePolybiusCipher&quot;,
     &quot;accountId&quot;: &quot;4c801779-cf1c-4f3f-949a-5e33f3cd2b4b&quot;
   }
 }</component>
@@ -43,14 +50,54 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.GOST_28147-89.executor": "Run",
+    "Python.RSA_CFB.executor": "Run",
+    "Python.SinglePermutation.executor": "Run",
+    "Python.ThePolybiusCipher.executor": "Run",
     "Python.ii.executor": "Run",
+    "Python.keyGenerate.executor": "Run",
+    "Python.Новый текстовый документ.PY.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/gurid/Рабочий стол/ThePolybiusCipher"
+    "last_opened_file_path": "/run/user/1000/gvfs/mtp:host=Xiaomi_Redmi_Note_13_Pro_5G_8f5ef353/Внутренний общий накопитель/Download/Telegram/ХЕХЕ",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="/run/user/1000/gvfs/mtp:host=Xiaomi_Redmi_Note_13_Pro_5G_8f5ef353/Внутренний общий накопитель/Download/Telegram/ХЕХЕ" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/RSA" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="GOST_28147-89" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="lr" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GOST_28147-89.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -90,7 +137,39 @@
       <option name="project" value="LOCAL" />
       <updated>1772638380931</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add GOST 28147-89">
+      <option name="closed" value="true" />
+      <created>1772639830033</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1772639830033</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add GOST 28147-89">
+      <option name="closed" value="true" />
+      <created>1772639853312</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1772639853312</updated>
+    </task>
+    <task id="LOCAL-00006" summary="change readme">
+      <option name="closed" value="true" />
+      <created>1772642788178</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1772642788178</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add interface to GOST">
+      <option name="closed" value="true" />
+      <created>1772661443281</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1772661443281</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -104,7 +183,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -118,6 +197,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add GOST 28147-89" />
-    <option name="LAST_COMMIT_MESSAGE" value="add GOST 28147-89" />
+    <MESSAGE value="change readme" />
+    <MESSAGE value="add interface to GOST" />
+    <option name="LAST_COMMIT_MESSAGE" value="add interface to GOST" />
   </component>
 </project>

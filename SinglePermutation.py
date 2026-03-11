@@ -12,22 +12,19 @@ frame2 = Frame(root, borderwidth=1, relief=GROOVE, background="#1e2b3a", padx=8,
 frame2.place(relwidth=0.45, relx=0.5, relheight=0.6, rely=0.1)
 root.geometry(f"{screen_width}x{screen_height}+0+0")
 root.attributes('-alpha', 0.6)
-label = Label(frame1, text="Введите текст для шифрования", padx=8, pady=8, font=("Segoe UI", 14, "bold"),
-              background="white")
+label = Label(frame1, text="Введите текст для шифрования", padx=8, pady=8, background="white")
 label.pack(anchor=W)
-label = Label(frame2, text="Результат шифрования", padx=8, pady=8, font=("Segoe UI", 14, "bold"), foreground="#a9c1d9",
-              background="#1e2b3a")
+label = Label(frame2, text="Результат шифрования", padx=8, pady=8, foreground="#a9c1d9", background="#1e2b3a")
 label.pack(anchor=W)
 txt = Text(frame1)
 txt.pack(fill=X, pady=10, padx=5)
 chek = Label(frame2, background="#1e2b3a")
 chek.pack()
-cod_text = Text(frame2, padx=8, pady=8, background="#1e2b3a", wrap=WORD, height=8, foreground="#a9c1d9",
-                font=("Arial", 14))
+cod_text = Text(frame2, padx=8, pady=8, background="#1e2b3a", wrap=WORD, height=8, foreground="#a9c1d9")
 cod_text.pack(fill=BOTH, expand=True)
-decoded_text = Text(frame2, padx=8, pady=8, background="#1e2b3a", wrap=WORD, height=8, foreground="#a9c1d9",
-                    font=("Arial", 14))
+decoded_text = Text(frame2, padx=8, pady=8, background="#1e2b3a", wrap=WORD, height=8, foreground="#a9c1d9")
 decoded_text.pack(fill=BOTH, expand=True)
+
 
 def click_button():
     text = txt.get("1.0", "end-1c")
@@ -38,7 +35,7 @@ def click_button():
             if len(text) % i == 0:
                 n = i
                 break
-        if n==0:
+        if n == 0:
             text += " "
             print(len(text))
     key = random.sample(range(0, n), n)
@@ -69,10 +66,14 @@ def click_button():
         chek.config(text="Кодирование прошло успешно", background="#ccff99", foreground="#009900", padx=8, pady=8)
     else:
         chek.config(text="Произошли ошибки", background="#FFCDD2", foreground="#B71C1C", padx=8, pady=8)
+
+
 def clear():
     cod_text.delete("1.0", END)
     chek.config(text="")
     decoded_text.delete("1.0", END)
+
+
 button_frame = Frame(frame1, background="white")
 button_frame.pack(fill=X, pady=5)
 btn_encrypt = Button(button_frame, text="Зашифровать", command=click_button, background="#1e2b3a", foreground="white",

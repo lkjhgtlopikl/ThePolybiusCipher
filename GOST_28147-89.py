@@ -12,40 +12,30 @@ frame2 = Frame(root, borderwidth=1, relief=GROOVE, background="#1e2b3a", padx=8,
 frame2.place(relwidth=0.45, relheight=0.8, relx=0.5, rely=0.1)
 root.geometry(f"{screen_width}x{screen_height}+0+0")
 root.attributes('-alpha', 0.6)
-label = Label(frame1, text="Введите текст для шифрования", padx=8, pady=8, font=("Segoe UI", 14, "bold"),
-              background="white")
+label = Label(frame1, text="Введите текст для шифрования", padx=8, pady=8, background="white")
 label.pack(anchor=W)
-label = Label(frame2, text="Результат шифрования", padx=8, pady=8, font=("Segoe UI", 14, "bold"), foreground="#a9c1d9",
-              background="#1e2b3a")
+label = Label(frame2, text="Результат шифрования", padx=8, pady=8, foreground="#a9c1d9", background="#1e2b3a")
 label.pack(anchor=W)
 
 txt = Text(frame1)
 txt.pack(fill=X, pady=10, padx=5)
-label = Label(frame1, text="Исходные байты:", padx=8, pady=8, font=("Segoe UI", 14, "bold"),
-              background="white")
+label = Label(frame1, text="Исходные байты:", padx=8, pady=8, background="white")
 label.pack(anchor=W)
-text_bytes = Text(frame1, padx=8, pady=8, wrap=WORD, height=8, font=("Arial", 14))
+text_bytes = Text(frame1, padx=8, pady=8, wrap=WORD, height=8, )
 text_bytes.pack(fill=BOTH, expand=True)
 chek = Label(frame2, background="#1e2b3a")
 chek.pack()
-label = Label(frame2, text="Зашифрованные данные:", padx=8, pady=8, font=("Segoe UI", 14, "bold"), foreground="#a9c1d9",
-              background="#1e2b3a")
+label = Label(frame2, text="Зашифрованные данные:", padx=8, pady=8, foreground="#a9c1d9", background="#1e2b3a")
 label.pack(anchor=W)
-cod_text = Text(frame2, padx=8, pady=8, background="#1e2b3a", wrap=WORD, height=8, foreground="#a9c1d9",
-                font=("Arial", 14))
+cod_text = Text(frame2, padx=8, pady=8, background="#1e2b3a", wrap=WORD, height=8, foreground="#a9c1d9", )
 cod_text.pack(fill=BOTH, expand=True)
-label = Label(frame2, text="Расшифровано (данные):", padx=8, pady=8, font=("Segoe UI", 14, "bold"),
-              foreground="#a9c1d9",
-              background="#1e2b3a")
+label = Label(frame2, text="Расшифровано (данные):", padx=8, pady=8, foreground="#a9c1d9", background="#1e2b3a")
 label.pack(anchor=W)
-decoded_text = Text(frame2, padx=8, pady=8, background="#1e2b3a", wrap=WORD, height=8, foreground="#a9c1d9",
-                    font=("Arial", 14))
+decoded_text = Text(frame2, padx=8, pady=8, background="#1e2b3a", wrap=WORD, height=8, foreground="#a9c1d9", )
 decoded_text.pack(fill=BOTH, expand=True)
-label = Label(frame2, text="Расшифровано (байты):", padx=8, pady=8, font=("Segoe UI", 14, "bold"), foreground="#a9c1d9",
-              background="#1e2b3a")
+label = Label(frame2, text="Расшифровано (байты):", padx=8, pady=8, foreground="#a9c1d9", background="#1e2b3a")
 label.pack(anchor=W)
-decoded_bytes = Text(frame2, padx=8, pady=8, background="#1e2b3a", wrap=WORD, height=8, foreground="#a9c1d9",
-                     font=("Arial", 14))
+decoded_bytes = Text(frame2, padx=8, pady=8, background="#1e2b3a", wrap=WORD, height=8, foreground="#a9c1d9", )
 decoded_bytes.pack(fill=BOTH, expand=True)
 
 
